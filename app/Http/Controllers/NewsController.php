@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\News;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\NewsCollection;
 use Illuminate\Http\Request;
 Use Inertia\Inertia;
 
@@ -14,7 +15,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news = News::all();
+        $news = new NewsCollection(News::paginate(8));
         return Inertia::render('Homepage', [
             'title' => 'This is a title',
             'description' => 'This is my description',
