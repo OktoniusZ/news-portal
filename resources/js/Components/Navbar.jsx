@@ -13,16 +13,16 @@ const Navbar = () => {
                     />
                 </div>
                 <div className="dropdown dropdown-end">
-                    <label tabindex="0" className="btn btn-ghost btn-circle avatar">
+                    <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             <img
                                 alt="Tailwind CSS Navbar component"
-                                src="/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                                src="https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             />
                         </div>
                     </label>
                     <ul
-                        tabindex="0"
+                        tabIndex="0"
                         className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
                     >
                         <li>
