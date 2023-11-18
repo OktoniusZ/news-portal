@@ -1,0 +1,43 @@
+[33mcommit de6d4f58ccda1635c24e2bf7d7d69d84e885688d[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: 424c99c5 40a7605d
+Author: Taylor Otwell <taylor@laravel.com>
+Date:   Mon Nov 6 17:31:18 2023 -0600
+
+    fixing conflicts
+
+[1mdiff --cc .github/workflows/tests.yml[m
+[1mindex 8d0f112c,0e0c54ec..03601bdb[m
+[1m--- a/.github/workflows/tests.yml[m
+[1m+++ b/.github/workflows/tests.yml[m
+[36m@@@ -19,7 -19,7 +19,7 @@@[m [mjobs[m
+      strategy:[m
+        fail-fast: true[m
+        matrix:[m
+[31m-         php: [8.2][m
+[31m -        php: [8.1, 8.2, 8.3][m
+[32m++        php: [8.2, 8.3][m
+  [m
+      name: PHP ${{ matrix.php }}[m
+  [m
+[1mdiff --cc composer.json[m
+[1mindex f9816729,8a3d72d4..8cc9888f[m
+[1m--- a/composer.json[m
+[1m+++ b/composer.json[m
+[36m@@@ -5,11 -5,11 +5,11 @@@[m
+      "keywords": ["laravel", "framework"],[m
+      "license": "MIT",[m
+      "require": {[m
+[31m -        "php": "^8.1",[m
+[32m +        "php": "^8.2",[m
+          "guzzlehttp/guzzle": "^7.2",[m
+[31m -        "laravel/framework": "^10.10",[m
+[31m -        "laravel/sanctum": "^3.3",[m
+[31m -        "laravel/tinker": "^2.8"[m
+[32m +        "laravel/framework": "^11.0",[m
+[31m-         "laravel/tinker": "dev-develop",[m
+[31m-         "laravel/sanctum": "^4.0"[m
+[32m++        "laravel/sanctum": "^4.0",[m
+[32m++        "laravel/tinker": "dev-develop"[m
+      },[m
+      "require-dev": {[m
+          "fakerphp/faker": "^1.9.1",[m
