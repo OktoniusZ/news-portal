@@ -1,4 +1,8 @@
 const Paginator = ({ meta }) => {
+    
+
+
+
     return (
         <div className="join">
             <button className="join-item btn">«</button>
